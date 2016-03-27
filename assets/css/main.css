@@ -600,6 +600,11 @@ section:nth-child(odd) {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
 
+section.about {
+  background-image: url(../img/about-bg.jpg);
+  background-position: center bottom;
+  background-size: cover; }
+
 .home-wrap {
   display: -ms-flexbox;
   display: flex;
