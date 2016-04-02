@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,400italic);
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -441,15 +442,6 @@ body {
 
 /* Basic Styles
   ------------------------------------	*/
-body {
-  background: #F6F6F8;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: 'Open Sans' sans-serif;
-  color: #2E2D33;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
-
 svg {
   height: 100%;
   width: 100%; }
@@ -464,6 +456,19 @@ fieldset {
   margin: 0;
   border: none; }
 
+html,
+body {
+  min-height: 100vh; }
+
+body {
+  background: #F6F6F8;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Fira Sans', sans-serif;
+  color: #2E2D33;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
 @media screen and (max-width: 480px) {
   h3 {
     padding: 50px 0 50px; } }
@@ -473,6 +478,17 @@ section:nth-child(odd) {
   padding-bottom: 100px; }
   section:nth-child(odd) h3 {
     color: #9a4038; }
+
+.home-cta {
+  font-size: 28px;
+  display: block;
+  background: white;
+  text-align: center;
+  padding: .5em 0;
+  line-height: 1;
+  transition: all 0.15s ease-in-out; }
+  .home-cta:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); }
 
 .home-wrap header {
   width: 135px;
@@ -604,6 +620,37 @@ section.about {
   background-image: url(../img/about-bg.jpg);
   background-position: center bottom;
   background-size: cover; }
+  section.about h2 {
+    color: #3f3f42;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: -108px;
+    margin-top: 0px; }
+  section.about .home-lead {
+    padding-bottom: 180px; }
+
+@media (max-width: 640px) {
+  section.about h2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; } }
+
+section.youtube {
+  background-image: url(../img/youtube-bg.gif);
+  background-position: center;
+  background-size: cover;
+  color: white; }
+  section.youtube .home-cta {
+    color: #e20a0a; }
+  section.youtube .video-strip {
+    background: pink;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  section.youtube .col-1 {
+    position: relative; }
 
 .home-wrap {
   display: -ms-flexbox;
@@ -635,17 +682,17 @@ section.about {
 
 .col-1 {
   max-width: 300px;
-  margin: 0 10px;
-  background: pink; }
+  margin: 0 10px; }
 
 .col-2 {
   max-width: 620px;
-  margin: 0px 10px;
-  background: honeydew; }
+  margin: 0px 10px; }
 
 .col-50 {
-  width: 50%;
-  background: yellow; }
+  width: 50%; }
+
+.push-right {
+  margin-left: 330px; }
 
 @media (max-width: 640px) {
   .home-sections .flex {
@@ -653,4 +700,12 @@ section.about {
   .col-1 {
     max-width: 100%; }
   .col-50 {
-    width: auto; } }
+    width: auto; }
+  .push-right {
+    margin-left: 10px; } }
+
+.home-lead {
+  font-size: 36px;
+  line-height: 1.1; }
+  .home-lead.outdented {
+    text-indent: -0.7em; }
